@@ -1,3 +1,5 @@
 @media screen and (max-width:1349px){ /* 태블릿 */
-    #gate_slide .swiper-slide .text{padding: 0 80px;}
+    header nav>a{padding: 10px 30px;}
+    #gate_slide .swiper-slide .text{padding: 0 80px;;}
+
 }

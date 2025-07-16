@@ -1,1 +1,35 @@
-@media screen and (max-width:799px){ /* 모바일 */}
+@media screen and (max-width:799px){ /* 모바일 */
+    header{}
+    header h1>a{
+        position: absolute; top: 20%; left: 10px; 
+    }
+    header .m_menu{
+        display: block; position: absolute; top: 50%; right: 10px; 
+        transform: translateY(-50%); width: 20px; height: 20px; z-index: 51;
+    }
+    header .m_menu>p{
+        height: 5px; margin-bottom: 2px;
+        background-color: #fff;
+    }
+    header .m_menu>p:last-child{margin-bottom: 0;}
+    header .h_nav{}
+    header .h_nav nav{
+        position: absolute; top: 60px; right: 0;
+        flex-flow: column nowrap; 
+        text-align: right; z-index: 50;
+        transform: translateX(300px);
+    }
+    header:hover .h_nav nav {
+        transform: translateX(0px);
+    }
+    header .h_nav nav>a{
+        padding: 10px 15px; font-size: 0.75rem;
+    }
+    /* ====================================================== */
+    #gate_slide .swiper-slide .text{padding: 0 10px;}
+    #gate_slide .swiper-slide .text>p{font-size: 0.625rem;}
+    #gate_slide .swiper-slide .text h2{font-size: 1.875rem;}
+    #gate_slide .swiper-slide .text .tmi span{font-size: 0.75rem;}
+    #gate_slide .slide2 .img{background: url(../images/bg_02.jpg) 40% 60%/cover;}
+    #gate_slide .slide3 .img{background: url(../images/bg_03.jpg) center/cover;}
+}

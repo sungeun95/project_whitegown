@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHITEGOWN</title>
+    <link rel="shortcut icon" href="./images/icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/icon/favicon.ico" type="image/x-icon">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 스크롤 트리거 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <style>
+        header,footer{width: 100%; height: 100px; background-color: black;}
+        #wrap{width: 100%;}
+        #wrap * {height: 100vh;}
+        #wrap .gate {background-color: red;}
+        #wrap .value {background-color: orange;}
+        /* #wrap #wrap_slide  * {width: 100%; height: 100vh;} */
+        #wrap #wrap_slide .city {background-color: yellow;}
+        #wrap #wrap_slide .printed {background-color: green;}
+        #wrap #wrap_slide .embroidery {background-color: blue;}
+        #wrap #wrap_slide .list {background-color: navy;}
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="swiper" id="wrap">
+            <!--필수-->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide gate">gate</div>
+                <div class="swiper-slide value">value</div>
+                <div class="swiper-slide">
+                    <div class="swiper" id="wrap_slide">
+                            <!--필수-->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide city">city</div>
+                            <div class="swiper-slide printed">printed</div>
+                            <div class="swiper-slide embroidery">embroidery</div>
+                            <div class="swiper-slide list">list</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--필요 시 사용(선택)-->
+        </div>
+    </main>
+    <footer></footer>
+    <!-- ======================================== -->
+    <script>
+        const wrap = new Swiper('#wrap',{
+            direction:'vertical', /* 세로로 스와이퍼 */
+            mousewheel:true, /* 스크롤시 이동 */
+        })
+        
+        const wrap_box = new Swiper('#wrap_slide',{
+            direction:'horizontal', /* 세로로 스와이퍼 */
+            mousewheel:true, /* 스크롤시 이동 */
+        })
+    </script>
+</body>
+</html>
