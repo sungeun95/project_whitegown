@@ -15,14 +15,11 @@
     <!-- 스크롤 트리거 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-        <!--외부스크립트연결 -->
-        <script src="./scripts/index.js" defer></script>
-    <!-- 외부연결CSS -->
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/index_tablet.css">
     <link rel="stylesheet" href="./style/index_mobile.css">
-    
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -38,8 +35,8 @@
         </div>
     </header>
     <main>
-        <div class="all gate">
-            <div class="swiper" id="gate_slide">
+        <div class="gate">
+            <div id="gate_slide">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
                         <p class="img"></p>
@@ -80,33 +77,111 @@
                 </div>
             </div>
         </div>
-        <div class="all value"><p></p></div>
-        <div class="all city">
-             <div class="video_box">
-                <div class="video_video">
-                    <video src="./images/video/city.mp4" autoplay muted loop ></video>
-                </div>
-                <div class="city_text">
-                    <div class="text_top">
-                        <p><span>64</span>개의 업체가 화이트가운과 거래를 진행하고 있으며</p>
-                        <p><span>99</span>%의 소비자가 만족하였습니다. </p>
-                    </div>
-                    <div class="text_bottom">
-                        <div class="text_left">
-                            <p>정직한 속도, 신뢰의 품질</p>
-                            <p>신뢰를 약속처럼 지키며, 고객과의 모든 거래에 신속함과 정직함을 더해 갑니다. <br>
-                                단순한 구매가 아닌, 함께 성장하는 파트너십을 경험해보세요.</p>
+        <div class="value">
+            <div class="container">
+                <h2>White gown</h2>
+                <div class="swiper" id="value_slide">
+                    <!--필수-->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide value_box1">
+                            <div class="box">
+                                <div class="value_text">
+                                    <h3>ORDER SYSTEM</h3>
+                                    <p>대량 주문 부터 소량 주문까지 & 신속한 고객지원 시스템<br>
+                                        기성제품으로 제주/도서 지역 동일한 배송비, 일정가격 무료배송 지원</p>
+                                </div>
+                                <p class="value_img"><!-- img --></p>
+                            </div>
                         </div>
-                        <div class="text_right">
-                            <p>*소비자 만족도를 통계하여 합산한 계산입니다.</p>
+                        <div class="swiper-slide value_box2">
+                            <div class="box">
+                                <div class="value_text">
+                                    <h3>DELIVERY SYSREM</h3>
+                                    <p>거품 뺀 저렴한 가격과 빠른 배송.<br>
+                                        유통과정 없는 저렴한 가격과 자발적 배송지원으로 차별화된 서비스</p>
+                                </div>
+                                <p class="value_img"><!-- img --></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide value_box3">
+                            <div class="box">
+                                <div class="value_text">
+                                    <h3>PRODUCTIOM SYSTEM</h3>
+                                    <p>대형 생산 라인 구축 & 유통 시스템<br>
+                                        오랜 경험으로 쌓인 노하우, 화이트가운만의 차별화된 제품</p>
+                                </div>
+                                <p class="value_img"><!-- img --></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide value_box4">
+                            <div class="box">
+                                <div class="value_text">
+                                    <h3>ORDER SYSTEM</h3>
+                                    <p>대량 주문 부터 소량 주문까지 & 신속한 고객지원 시스템<br>
+                                        기성제품으로 제주/도서 지역 동일한 배송비, 일정가격 무료배송 지원</p>
+                                </div>
+                                <p class="value_img"><!-- img --></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide value_box5">
+                            <div class="box">
+                                <div class="value_text">
+                                    <h3>DELIVERY SYSREM</h3>
+                                    <p>거품 뺀 저렴한 가격과 빠른 배송.<br>
+                                        유통과정 없는 저렴한 가격과 자발적 배송지원으로 차별화된 서비스</p>
+                                </div>
+                                <p class="value_img"><!-- img --></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide value_box6">
+                            <div class="box">
+                                <div class="value_text">
+                                    <h3>PRODUCTIOM SYSTEM</h3>
+                                    <p>대형 생산 라인 구축 & 유통 시스템<br>
+                                        오랜 경험으로 쌓인 노하우, 화이트가운만의 차별화된 제품</p>
+                                </div>
+                                <p class="value_img"><!-- img --></p>
+                            </div>
                         </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
-        <div class="all printed"><p></p></div>
-        <div class="all embroidery"><p></p></div>
-        <div class="all list"><p></p></div>
+        <div class="swiper" id="wrap_slide">
+            <!--필수-->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide city">
+                    <div class="video_box">
+                        <div class="video_video">
+                            <video src="./images/video/city.mp4" autoplay muted loop ></video>
+                        </div>
+                        <div class="city_text">
+                            <div class="city_box">
+                                <div class="text_top">
+                                    <p><span>64</span>개의 업체가 화이트가운과 거래를 진행하고 있으며</p>
+                                    <p><span>99</span>%의 소비자가 만족하였습니다. </p>
+                                </div>
+                                <div class="text_bottom">
+                                    <div class="text_left">
+                                        <p>정직한 속도, 신뢰의 품질</p>
+                                        <p>신뢰를 약속처럼 지키며, 고객과의 모든 거래에 신속함과 정직함을 더해 갑니다. <br>
+                                            단순한 구매가 아닌, 함께 성장하는 파트너십을 경험해보세요.</p>
+                                    </div>
+                                    <div class="text_right">
+                                        <p>*소비자 만족도를 통계하여 합산한 계산입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide printed">slide2</div>
+                <div class="swiper-slide embroidery">slide3</div>
+                <div class="swiper-slide list">slide4</div>
+            </div>
+        </div>
     </main>
     <footer></footer>
 </body>

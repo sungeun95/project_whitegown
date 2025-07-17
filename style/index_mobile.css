@@ -32,4 +32,18 @@
     #gate_slide .swiper-slide .text .tmi span{font-size: 0.75rem;}
     #gate_slide .slide2 .img{background: url(../images/bg_02.jpg) 40% 60%/cover;}
     #gate_slide .slide3 .img{background: url(../images/bg_03.jpg) center/cover;}
+    /* ======================================================== city : s */
+    #wrap_slide .city .video_box .city_text{padding: 80px 0; }
+    #wrap_slide .city .video_box .city_text .city_box{width: 300px;}
+    #wrap_slide .city .video_box .city_text .city_box .text_top>p{font-size: 0.75rem;}
+    #wrap_slide .city .video_box .city_text .city_box .text_top>p>span{font-size: 1.25rem;}
+    #wrap_slide .city .video_box .city_text .city_box .text_bottom{
+        flex-flow: column nowrap; justify-content: left; align-items: start;
+    }
+    #wrap_slide .city .video_box .city_text .city_box .text_bottom .text_left>p{font-size: 1.125rem;}
+    #wrap_slide .city .video_box .city_text .city_box .text_bottom .text_left>p:last-child{
+        font-size: 0.6rem;
+    }
+    #wrap_slide .city .video_box .city_text .city_box .text_bottom .text_right>p{font-size: 0.5rem;}
+    /* ======================================================== city : e */
 }

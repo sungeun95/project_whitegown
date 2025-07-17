@@ -1,5 +1,15 @@
 @media screen and (max-width:1349px){ /* 태블릿 */
     header nav>a{padding: 10px 30px;}
     #gate_slide .swiper-slide .text{padding: 0 80px;;}
-
+    /* ======================================================== city : s */
+    #wrap_slide .city .video_box .city_text{padding: 80px 0;}
+    #wrap_slide .city .video_box .city_text .city_box{width: 780px;}
+    #wrap_slide .city .video_box .city_text .city_box .text_top>p{font-size: 1.7rem;}
+    #wrap_slide .city .video_box .city_text .city_box .text_top>p>span{font-size: 3.4rem;}
+    #wrap_slide .city .video_box .city_text .city_box .text_bottom .text_left>p{font-size: 1.875rem;}
+    #wrap_slide .city .video_box .city_text .city_box .text_bottom .text_left>p:last-child{
+        font-size: 0.875rem;
+    }
+    #wrap_slide .city .video_box .city_text .city_box .text_bottom .text_right>p{font-size: 0.625rem;}
+    /* ======================================================== city : e */
 }
