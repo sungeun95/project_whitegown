@@ -1,26 +1,5 @@
 html body * {transition: all 0.5s; line-height: 1.5;}
 
-/* ======================================================== header : s*/
-header{
-    width: 100%; height: 60px; background: none;
-    position: fixed; top: 0; left: 0; z-index: 100;
-    padding: 10px; display: flex; justify-content: space-between; align-items: center;
-} 
-header h1{}
-header>h1>a{
-    display: block; width: 140px; height: 40px;
-    background: url(../images/logo.png) center/cover;
-}
-
-
-header .m_menu{display: none;}
-header .h_nav nav{display: flex;}
-header .h_nav nav>a{ 
-    display: block;
-    color: #fff; padding: 15px 50px;
-    background:none;
-}
-/* ======================================================== header : e */
 /* ======================================================== gate : s */
 main .gate{width: 100%; height: 100vh;}
 #gate_slide{height: 100%; position: relative; overflow: hidden;}
@@ -188,7 +167,7 @@ main .gate{width: 100%; height: 100vh;}
     width: max-content;
     font-size: 3.75rem; color: #003366;
     display: flex; flex-flow: column nowrap;
-    align-items: center;
+    align-items: center; font-weight: 600;
     margin-bottom: 40px;
 }
 .container .text .top .title>span{
@@ -198,11 +177,11 @@ main .gate{width: 100%; height: 100vh;}
 .container .text .top>p:nth-child(2){
     font-size: 1.25rem; margin-bottom: 20px;
 }
-.container .text .top>p:nth-child(3){color: #003366;}
+.container .text .top>p:nth-child(3){color: #003366; }
 .container .text .bottom{}
 .container .text .bottom>a{
      height: 30px; width: max-content;
-    display: flex; align-items: center; align-content: center;
+    display: flex; align-items: center;
     justify-content: center;
 }
 
@@ -216,5 +195,54 @@ main .gate{width: 100%; height: 100vh;}
 }
 .container .text .bottom>a>p>img{display: block; width: 100%; height: 100%;}
 /* ======================================================== printed,embroidery : e */
-        #wrap_slide .list{ width: 100%; height: 100vh; background-color: navy;}
-footer{width: 100%; height: 250px; background-color: #001020;}
+/* ======================================================== list : s */
+.list{ width: 100%; height: 100vh;}
+.list .container{width: 100%; height: 100%; display: flex;}
+.list .container * {color: #fff; text-transform: uppercase;}
+.list .container .left_box{
+    width:50%; height: 100%;
+    position: relative;
+}
+.list .container .left_box .opaque_text{
+    position: absolute; left: 0; top: 0;
+    width: 100%; height: 100%; z-index: 10;
+    text-align: center; display: flex; align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+.list .container .left_box .list_img{
+    position: absolute; left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: url(../images/list/building.jpg) center/cover;
+}
+.right_box{
+    width: 50%; height: 100%; display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+}
+.right_box>a{width: 100%; height: 100%;position: relative;}
+.right_box>a .opaque_text{
+    width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 5;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;
+}
+.right_box>a .opaque_text>p{
+    font-size: 1.875rem; margin-bottom: 30px; font-weight: 500;
+}
+.right_box>a .opaque_text>.tmi{}
+.right_box>a .opaque_text>.tmi>p{}
+.right_box>a .list_img{
+    width: 100%; height: 100%; position: absolute; left: 0; top: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.right_box>a:nth-child(1) .list_img{background-image: url(../images/list/cs.jpg)}
+.right_box>a:nth-child(2) .list_img{background-image: url(../images/list/bank.jpg)}
+.right_box>a:nth-child(3) .list_img{background-image: url(../images/list/delivery.jpg)}
+.right_box>a:nth-child(4) .list_img{background-image: url(../images/list/q&a.jpg)}
+.right_box>a:hover .opaque_text{background-color: rgba(0, 0, 0, 0.1);}
+.right_box>a:hover .opaque_text *{color: #003366};
+/* ======================================================== list : e */
+

@@ -127,7 +127,7 @@ const bestSwiper = new Swiper('#gate_slide',{
     //옵션:값,
     loop:true,
     autoplay:{
-	delay:2000,
+	delay:3000,
     disableOnInteraction:false,
 },
 })
@@ -138,7 +138,7 @@ const value = new Swiper('#value_slide',{
     centeredSlides:true,
     loop:true,
     autoplay:{
-	delay:3000,
+	delay:3500,
     disableOnInteraction:false,
     },
     navigation:{

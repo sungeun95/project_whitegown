@@ -1,5 +1,4 @@
 @media screen and (max-width:1349px){ /* 태블릿 */
-    header .h_nav nav>a{padding: 10px 30px;}
     #gate_slide .swiper-slide .text{padding: 0 80px;;}
     /* ======================================================== city : s */
     #wrap_slide .city .video_box .city_text{padding: 80px 0;}
@@ -34,4 +33,12 @@
     .container .text .top>p:nth-child(3){font-size: 0.875rem;}
     .printed .text .bottom{display: flex; align-items: end; justify-content: end;}
     /* ======================================================== printed,embroidery : e */
+    /* ======================================================== list : s */
+    .list .container{flex-flow: column nowrap;}
+    .list .container .left_box{width: 100%;}
+    .list .container .left_box .opaque_text{font-size: 1.875rem;}
+    .right_box{width: 100%;}
+    .right_box>a .opaque_text>p{font-size: 1.563rem;}
+    .right_box>a .opaque_text>.tmi>p{font-size: 0.875rem;}
+    /* ======================================================== list : e */
 }
