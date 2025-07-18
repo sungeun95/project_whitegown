@@ -96,9 +96,14 @@ main .gate{width: 100%; height: 100vh;}
     background: url(../images/icon/arrow_left.png) center/cover;
 }
 /* ======================================================== value : e */
-        #wrap_slide{}
-        #wrap_slide .swiper-slide{width: 100%; height: 100vh;}
-        #wrap_slide .city{background-color: yellow;}
+#wrap_slide{
+    height: max-content;
+}
+#wrap_slide .swiper-slide{
+    width: 100%; height: 100vh;
+    position: sticky; top: 0;
+}
+#wrap_slide .city{background-color: yellow;}
 /* ======================================================== city : s */
 #wrap_slide .city{}
 #wrap_slide .city .video_box{width: 100%; height: 100%; position: relative;}
