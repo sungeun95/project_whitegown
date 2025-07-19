@@ -31,7 +31,7 @@ main .gate{width: 100%; height: 100vh;}
 }
 /* ======================================================== gate : e */
 /* ======================================================== value : s */
-.value{ width: 100%; height: 100vh; background-color: #fff;}
+.value{ width: 100%; height: 100vh; background-color: #e3e7e6;}
 .value .container{
     width: 100%; height: 100vh;; padding: 80px 0;
 }
@@ -226,7 +226,7 @@ main .gate{width: 100%; height: 100vh;}
     grid-template-columns:1fr 1fr;
     grid-template-rows:1fr 1fr;
 }
-.right_box>a{width: 100%; height: 100%;position: relative;}
+.right_box>a{width: 100%; height: 100%;position: relative; overflow: hidden;}
 .right_box>a .opaque_text{
     width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 5;
     background-color: rgba(0, 0, 0, 0.3);
@@ -238,6 +238,7 @@ main .gate{width: 100%; height: 100vh;}
 .right_box>a .opaque_text>.tmi{}
 .right_box>a .opaque_text>.tmi>p{}
 .right_box>a .list_img{
+    transform: scale(1); 
     width: 100%; height: 100%; position: absolute; left: 0; top: 0;
     background-position: center;
     background-size: cover;
@@ -247,7 +248,7 @@ main .gate{width: 100%; height: 100vh;}
 .right_box>a:nth-child(2) .list_img{background-image: url(../images/list/bank.jpg)}
 .right_box>a:nth-child(3) .list_img{background-image: url(../images/list/delivery.jpg)}
 .right_box>a:nth-child(4) .list_img{background-image: url(../images/list/q&a.jpg)}
+.right_box>a:hover .list_img{transform: scale(1.1);}
 .right_box>a:hover .opaque_text{background-color: rgba(0, 0, 0, 0.1);}
-.right_box>a:hover .opaque_text *{color: #003366};
 /* ======================================================== list : e */
 

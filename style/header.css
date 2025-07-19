@@ -1,25 +1,27 @@
 
 /* ======================================================== header : s*/
 header{
-    width: 100%; height: 60px; background: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%; height: 60px;
     position: fixed; top: 0; left: 0; z-index: 100;
-    padding: 10px; display: flex; justify-content: space-between; align-items: center;
+    display: flex; justify-content: space-between; align-items: center;
 } 
-header h1{}
+header h1{padding: 10px;}
 header>h1>a{
     display: block; width: 140px; height: 40px;
     background: url(../images/logo.png) center/cover;
+    position: absolute; top: 5px; left: 10px;
 }
 
 
 header .m_menu{display: none;}
 header .h_nav nav{display: flex;}
 header .h_nav nav>a{ 
-    display: block;
+    display: block; 
     color: #fff; padding: 15px 50px;
     background:none;
 }
-
+header .h_nav nav>a:hover{color: #000;}
 /* ======================================================== header : e */
 /* ======================================================== footer : s */
 footer{width: 100%; background-color: #001020; padding: 20px 260px;}
@@ -46,11 +48,12 @@ footer>P{font-size: 0.875rem; text-align: center; width: 100%;}
     footer>P{font-size: 0.75rem;}
 }
 @media screen and (max-width:799px){ /* 모바일 */
+    header{background-color: rgba(255, 255, 255, 0);}
     header h1>a{
         position: absolute; top: 10px; left: 10px; width: 100px; height: 23px;
     }
     header .m_menu{
-        display: block; position: absolute; top: 15px; right: 10px; 
+        display: block; position: absolute; top: 15px; right: 30px; 
          width: 30px; height: 20px; z-index: 51;
     }
     header .m_menu>p{
@@ -58,13 +61,15 @@ footer>P{font-size: 0.875rem; text-align: center; width: 100%;}
     }
     header .m_menu>p:last-child{margin-bottom: 0;}
     header .h_nav nav{
-        position: absolute; top: 50px; right: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute; top: 60px; right: 25px;
         flex-flow: column nowrap; 
         text-align: right; z-index: 50;
         transform: translateX(300px);
     }
     header:hover .h_nav nav {transform: translateX(0px);}
-    header .h_nav nav>a{padding: 10px 15px; font-size: 0.75rem;}
+    header .h_nav nav>a{padding: 10px 15px; font-size: 0.75rem;color: #000;}
+    header .h_nav nav>a:hover{color: #fff;}
     footer{padding: 20px;}
     footer h3{font-size: 0.875rem;margin-bottom: 15px;}
     footer .information{flex-flow:column nowrap ;}
